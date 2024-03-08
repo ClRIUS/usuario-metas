@@ -14,4 +14,5 @@ public class Usuario {
     private UUID usuario;
     private String nome;
     private String email;
+    private String senha;
 }
