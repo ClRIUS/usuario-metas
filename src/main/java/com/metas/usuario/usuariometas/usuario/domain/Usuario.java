@@ -1,4 +1,4 @@
-package com.metas.usuario.usuariometas.domain;
+package com.metas.usuario.usuariometas.usuario.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
