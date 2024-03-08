@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /usuario-metas/api
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: ${MONGO_DB_URI:mongodb+srv://gabrielcirilorosa:123@cluster0.gasc44y.mongodb.net/usuario-metas?retryWrites=true&w=majority&appName=Cluster0}
+      auto-index-creation: true
