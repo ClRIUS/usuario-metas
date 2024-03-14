@@ -11,4 +11,5 @@ public class UsuarioRequest {
     private final String email;
     @Size(min = 6)
     private final String senha;
+    private final String nome;
 }

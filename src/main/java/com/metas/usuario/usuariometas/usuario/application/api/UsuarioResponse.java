@@ -6,7 +6,7 @@ import lombok.Value;
 import java.util.UUID;
 @Value
 public class UsuarioResponse {
-    private final UUID idUsuario;
+    private final String idUsuario;
     private final String nome;
     private final String email;
     private final String senha;
