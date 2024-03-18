@@ -20,4 +20,13 @@ public class UsuarioMongoRepository implements UsuarioRepository {
         log.info("[finaliza] UsuarioMongoRepository - salva");
         return novoUsuario;
     }
+
+    @Override
+    public Usuario buscaUsuarioId(String idUsuario) {
+        log.info("[inicia] UsuarioMongoRepository - buscaUsuarioId");
+        Usuario buscaUsuarioId = usuarioMongoRepository.findById(idUsuario)
+                .orElseThrow(() -> new RuntimeException("Cliente não encontrado!"));
+        log.info("[finaliza] UsuarioMongoRepository - buscaUsuarioId");
+        return null;
+    }
 }

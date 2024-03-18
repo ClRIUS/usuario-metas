@@ -4,4 +4,6 @@ import com.metas.usuario.usuariometas.usuario.domain.Usuario;
 
 public interface UsuarioRepository {
     Usuario salva(Usuario usuario);
+
+    Usuario buscaUsuarioId(String idUsuario);
 }
