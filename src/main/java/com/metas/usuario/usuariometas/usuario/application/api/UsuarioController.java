@@ -23,7 +23,11 @@ public class UsuarioController implements UsuarioAPI{
 
     @Override
     public UsuarioResponse buscaUsuario(String idUsuario) {
-        return null;
+        log.info("[inicia] UsuarioController - buscaUsuario");
+        log.info("[inicia] {}", idUsuario);
+        UsuarioResponse buscaUsuario = usuarioService.buscaUsuarioId(idUsuario);
+        log.info("[finaliza] UsuarioController - buscaUsuario");
+        return buscaUsuario;
     }
 
 }

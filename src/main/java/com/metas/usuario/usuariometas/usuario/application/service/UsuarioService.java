@@ -5,4 +5,6 @@ import com.metas.usuario.usuariometas.usuario.application.api.UsuarioResponse;
 
 public interface UsuarioService {
     UsuarioResponse criaUsuario(UsuarioRequest usuarioRequest);
+
+    UsuarioResponse buscaUsuarioId(String idUsuario);
 }
