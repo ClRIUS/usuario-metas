@@ -12,4 +12,8 @@ public interface UsuarioAPI {
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
     UsuarioResponse novoUsuario(@RequestBody @Valid UsuarioRequest usuarioRequest);
+
+    @GetMapping("/{idUsuario}")
+    @ResponseStatus(code = HttpStatus.OK)
+    UsuarioResponse buscaUsuario(@PathVariable String idUsuario);
 }

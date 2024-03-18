@@ -20,4 +20,10 @@ public class UsuarioController implements UsuarioAPI{
         log.info("[finaliza] UsuarioController - novoUsuario");
         return usuarioCriado;
     }
+
+    @Override
+    public UsuarioResponse buscaUsuario(String idUsuario) {
+        return null;
+    }
+
 }
