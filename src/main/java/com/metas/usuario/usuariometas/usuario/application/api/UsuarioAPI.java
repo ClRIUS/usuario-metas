@@ -16,4 +16,8 @@ public interface UsuarioAPI {
     @GetMapping("/{idUsuario}")
     @ResponseStatus(code = HttpStatus.OK)
     UsuarioResponse buscaUsuario(@PathVariable String idUsuario);
+
+    @PatchMapping("/{idUsuario}")
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
+    void editaUsuario(@RequestHeader(name = "Authorization", required = true) @PathVariable String idUsuario);
 }

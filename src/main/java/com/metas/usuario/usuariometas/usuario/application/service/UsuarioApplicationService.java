@@ -33,4 +33,11 @@ public class UsuarioApplicationService implements UsuarioService{
         log.info("[finaliza] UsuarioApplicationService - buscaUsuarioId");
         return null;
     }
+
+    @Override
+    public Usuario editaUsuario(String idUsuario) {
+        log.info("[inicia] UsuarioApplicationService - editaUsuarioId");
+        log.info("[finaliza] UsuarioApplicationService - editaUsuarioId");
+        return null;
+    }
 }

@@ -30,4 +30,11 @@ public class UsuarioController implements UsuarioAPI{
         return buscaUsuario;
     }
 
+    @Override
+    public void editaUsuario(String idUsuario) {
+        log.info("[inicia] UsuarioController - editaUsuario");
+        Usuario usuario = usuarioService.editaUsuario(idUsuario);
+        log.info("[finaliza] UsuarioController - editaUsuario");
+    }
+
 }
