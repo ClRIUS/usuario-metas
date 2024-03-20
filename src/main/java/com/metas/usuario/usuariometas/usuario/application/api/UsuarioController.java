@@ -33,7 +33,6 @@ public class UsuarioController implements UsuarioAPI{
     @Override
     public void editaUsuario(String idUsuario) {
         log.info("[inicia] UsuarioController - editaUsuario");
-        Usuario usuario = usuarioService.editaUsuario(idUsuario);
         log.info("[finaliza] UsuarioController - editaUsuario");
     }
 

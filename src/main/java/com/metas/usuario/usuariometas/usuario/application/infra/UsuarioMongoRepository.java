@@ -27,6 +27,6 @@ public class UsuarioMongoRepository implements UsuarioRepository {
         Usuario buscaUsuarioId = usuarioMongoRepository.findById(idUsuario)
                 .orElseThrow(() -> new RuntimeException("Cliente não encontrado!"));
         log.info("[finaliza] UsuarioMongoRepository - buscaUsuarioId");
-        return null;
+        return buscaUsuarioId;
     }
 }

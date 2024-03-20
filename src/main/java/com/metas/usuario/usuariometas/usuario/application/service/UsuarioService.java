@@ -9,5 +9,5 @@ public interface UsuarioService {
 
     UsuarioResponse buscaUsuarioId(String idUsuario);
 
-    Usuario editaUsuario(String idUsuario);
+    void editaUsuario(String idUsuario);
 }
